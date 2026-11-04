@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO/GEO-Teardown: HUAX.ONE — Audit-Dossier · Tiyan Digital</title>
+<meta name="description" content="Unabhängiges SEO/GEO-Audit von huax.one (Lazzaro One), live geprüft am 04.11.2026: 3 von 16 Checks bestanden. Konzept-Demo von Tiyan Digital.">
+<meta property="og:title" content="HUAX.ONE — SEO/GEO-Audit-Dossier">
+<meta property="og:description" content="3 von 16 Checks bestanden. Live geprüft am 04.11.2026. Konzept-Demo von Tiyan Digital.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"SEO/GEO-Teardown: HUAX.ONE — Audit-Dossier","inLanguage":"de","datePublished":"2026-11-04","author":{"@type":"Organization","name":"Tiyan Digital","url":"https://tiyandegital.com"}}
+</script>
+<style>
+/* ============ HUAX HYDROGRAPHIC DOSSIER — production CSS ============ */
+:root{
+  --fog:#EDF1F2;          /* cold fog paper            */
+  --surface:#F6FAFB;      /* card paper                */
+  --surface-2:#EDEFF0;    /* tonal layer               */
+  --card:#FFFFFF;         /* data cores                */
+  --ink:#10181C;          /* abyssal ink               */
+  --ink-deep:#151D21;     /* instrument panel          */
+  --mut:#43474A;          /* muted body                */
+  --faint:#7D858A;
+  --line:rgba(16,24,28,.16);
+  --line-soft:rgba(16,24,28,.08);
+  --verm:#FF3B1F;         /* signal vermilion          */
+  --verm-dark:#B71500;
+  --sea:#0E6B4F;          /* status pass               */
+  --ochre:#B97F1F;        /* status caution            */
+  --sans:'Space Grotesk',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);color:var(--ink);background:var(--fog);
+  background-image:
+    repeating-linear-gradient(0deg, var(--line-soft) 0 1px, transparent 1px 56px),
+    repeating-linear-gradient(90deg, var(--line-soft) 0 1px, transparent 1px 56px);
+  -webkit-font-smoothing:antialiased;line-height:1.5;
+}
+::selection{background:var(--verm);color:#fff}
+img,svg{max-width:100%;height:auto}
+a{color:inherit}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1280px;margin:0 auto;padding-left:2.5rem;padding-right:2.5rem}
+.eyebrow{font-family:var(--mono);font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+h1,h2,h3{letter-spacing:-.02em}
+section{position:relative}
+
+/* ---- header ---- */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(237,241,242,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:56px}
+.brand{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.brand .plus{color:var(--verm-dark);font-weight:700}
+.brand .sub{color:var(--mut);font-weight:400}
+.coord-chip{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--mono);font-size:.6875rem;color:var(--mut);border:1px solid var(--line);background:var(--card);padding:.3rem .6rem}
+.coord-chip .dot{width:6px;height:6px;border-radius:50%;background:var(--verm-dark);display:inline-block}
+.live{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.6875rem;letter-spacing:.08em;color:var(--mut);text-transform:uppercase}
+.live .pulse{width:8px;height:8px;border-radius:50%;background:var(--sea);animation:blink 2.4s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.main-nav{display:flex;gap:.25rem}
+.main-nav a{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:.45rem .7rem;color:var(--mut);transition:background .15s,color .15s}
+.main-nav a:hover{color:var(--ink)}
+.main-nav a.active{background:var(--ink-deep);color:var(--fog);font-weight:600}
+
+/* ---- coordinate strip ---- */
+.coord-strip{background:var(--surface-2);border-bottom:1px solid var(--line);margin-top:56px}
+.coord-strip .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding:.55rem 2.5rem;font-family:var(--mono);font-size:.6875rem;letter-spacing:.04em;color:var(--mut)}
+.rec{color:var(--verm-dark);font-weight:600}
+.status-pill{background:#DEE3E4;padding:.2rem .6rem;color:var(--ink);font-weight:500}
+
+/* ---- hero ---- */
+.hero{padding:4.5rem 0 3.5rem;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:3rem;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase;background:var(--surface-2);border:1px solid var(--line);padding:.4rem .8rem}
+.hero-tag .plus{color:var(--verm-dark);font-weight:700}
+.hero h1{font-size:3rem;line-height:1.08;font-weight:700;margin:1.25rem 0 1rem}
+.hero h1 .accent{color:var(--verm-dark)}
+.hero .lede{font-size:1.0625rem;color:var(--mut);max-width:42rem}
+.hero .lede .dom{font-family:var(--mono);font-size:.9em;font-weight:600;color:var(--ink);background:#DFE3E4;padding:0 .35em}
+.cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.75rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:.95rem 1.6rem;border-radius:0;transition:background .18s,color .18s,transform .18s;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:var(--verm-dark);color:#fff}
+.btn-primary:hover{background:var(--verm);transform:translateY(-1px)}
+.btn-ghost{background:transparent;border-color:rgba(16,24,28,.4);color:var(--ink)}
+.btn-ghost:hover{background:rgba(16,24,28,.05)}
+.btn svg{width:16px;height:16px;flex:none}
+.telemetry{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:2rem;font-family:var(--mono)}
+.telemetry .cell{background:var(--surface-2);border:1px solid var(--line-soft);padding:.7rem .8rem}
+.telemetry .k{font-size:.625rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:.25rem}
+.telemetry .v{font-size:.8rem;font-weight:600}
+.depthmark{position:absolute;right:2rem;top:1.5rem;font-family:var(--mono);font-weight:700;font-size:clamp(6rem,14vw,12rem);letter-spacing:-.05em;color:var(--ink);opacity:.05;pointer-events:none;user-select:none;line-height:1}
+
+/* ---- gauge card ---- */
+.gauge{background:var(--card);border:1px solid var(--line);padding:1.75rem;position:relative;box-shadow:0 2px 0 rgba(16,24,28,.06)}
+.gauge .corner{position:absolute;font-family:var(--mono);color:var(--faint);font-size:.8rem}
+.c-tl{top:.5rem;left:.7rem}.c-tr{top:.5rem;right:.7rem}.c-bl{bottom:.5rem;left:.7rem}.c-br{bottom:.5rem;right:.7rem}
+.gauge-head{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6875rem;letter-spacing:.1em;color:var(--mut);text-transform:uppercase;margin-bottom:1rem}
+.gauge-head .alert{color:var(--verm-dark);font-weight:600}
+.gauge-dial{position:relative;display:flex;justify-content:center;padding:.75rem 0}
+.gauge-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.gauge-score{font-size:2.5rem;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.gauge-label{font-family:var(--mono);font-size:.6875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-top:.3rem}
+.gauge-foot{display:flex;align-items:center;justify-content:space-between;background:var(--fog);border:1px solid var(--line-soft);padding:.6rem .8rem;margin-top:1rem;font-family:var(--mono);font-size:.6875rem;letter-spacing:.06em}
+.gauge-foot .g{display:flex;align-items:center;gap:.45rem;font-weight:600}
+.swatch{width:8px;height:8px;display:inline-block}
+.swatch.crit{background:var(--verm-dark)}
+.swatch.pass{background:var(--sea)}
+.gauge-foot .ref{color:var(--mut)}
+
+/* ---- section shells ---- */
+.sec{padding:4rem 0}
+.sec.alt{background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:2rem}
+.sec-head h2{font-size:2rem;font-weight:600;margin-top:.35rem}
+.sec-note{font-family:var(--mono);font-size:.75rem;background:var(--card);border:1px solid var(--line);padding:.6rem .9rem;box-shadow:2px 2px 0 rgba(16,24,28,.12);max-width:22rem}
+.sec-note .tick{color:var(--verm-dark);font-weight:700}
+
+/* ---- finding strips ---- */
+.strips{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.strip{background:var(--card);border:1px solid var(--line);padding:1.5rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.25rem}
+.strip-top{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.strip-id{font-family:var(--mono);font-size:.75rem;font-weight:700;background:var(--ink);color:var(--fog);padding:.25rem .6rem;letter-spacing:.06em}
+.strip-id.first{background:var(--verm-dark)}
+.chip{font-family:var(--mono);font-size:.6875rem;font-weight:600;letter-spacing:.06em;padding:.25rem .6rem;border:1px solid}
+.chip.kritisch{color:var(--verm-dark);border-color:var(--verm-dark);background:rgba(255,59,31,.08)}
+.chip.bedarf{color:#8A5E15;border-color:var(--ochre);background:rgba(185,127,31,.1)}
+.chip.pass{color:var(--sea);border-color:var(--sea);background:rgba(14,107,79,.08)}
+.strip h3{font-size:1.375rem;font-weight:600;margin-bottom:.5rem}
+.strip p{font-size:.9375rem;color:var(--mut)}
+.strip p code{font-family:var(--mono);font-size:.82em;background:var(--surface-2);padding:0 .3em;color:var(--ink)}
+.strip .impact{font-family:var(--mono);font-size:.6875rem;color:var(--mut);background:var(--fog);border:1px solid var(--line-soft);padding:.55rem .7rem;letter-spacing:.02em}
+
+/* ---- instrument panels (visual break) ---- */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.panel{background:var(--surface-2);border:1px solid var(--line);padding:1.25rem;display:flex;gap:1.25rem;align-items:center}
+.panel-fig{flex:none;width:120px;height:120px;background:var(--ink-deep);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.panel-fig svg{width:104px;height:104px}
+.panel .k{font-family:var(--mono);font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.panel .k.red{color:var(--verm-dark)}
+.panel h4{font-size:1.375rem;font-weight:600;margin:.35rem 0}
+.panel p{font-size:.9375rem;color:var(--mut)}
+
+/* ---- audit register ---- */
+.tally{display:flex;flex-wrap:wrap;gap:.5rem;font-family:var(--mono);font-size:.75rem}
+.tally span{padding:.4rem .8rem;font-weight:600;border:1px solid var(--line)}
+.tally .t-pass{background:rgba(14,107,79,.12);color:var(--sea);border-color:var(--sea)}
+.tally .t-bedarf{background:rgba(185,127,31,.12);color:#8A5E15;border-color:var(--ochre)}
+.tally .t-krit{background:var(--verm-dark);color:#fff;border-color:var(--verm-dark)}
+.blocks{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.block{background:var(--card);border:1px solid var(--line);padding:1.5rem;display:flex;flex-direction:column;gap:1rem}
+.block-head{display:flex;align-items:center;justify-content:space-between;gap:.75rem;background:var(--surface-2);border:1px solid var(--line-soft);padding:.65rem .9rem}
+.block-head .t{font-family:var(--mono);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.block-head .s{font-family:var(--mono);font-size:.6875rem;font-weight:600;letter-spacing:.04em}
+.block-head .s.kritisch{color:var(--verm-dark)}
+.block-head .s.mixed{color:#8A5E15}
+.block-head .s.pass{color:var(--sea)}
+.checks{display:flex;flex-direction:column;gap:1rem}
+.check{background:var(--fog);border:1px solid var(--line-soft);padding:1rem}
+.check.ok{background:var(--card);border-left:4px solid var(--sea);box-shadow:2px 2px 0 rgba(16,24,28,.06)}
+.check-row{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;margin-bottom:.55rem}
+.check-row .n{font-family:var(--mono);font-size:.75rem;font-weight:700;letter-spacing:.02em}
+.check p{font-size:.9375rem;color:var(--ink)}
+.check p+p{margin-top:.35rem}
+.check .why{font-size:.85rem;color:var(--mut)}
+.check code{font-family:var(--mono);font-size:.82em;background:var(--surface-2);padding:0 .3em}
+
+/* ---- gate section ---- */
+.friction{font-family:var(--mono);font-size:.75rem;font-weight:600;letter-spacing:.08em;color:var(--verm-dark);text-transform:uppercase}
+.gate-grid{display:grid;grid-template-columns:5fr 7fr;gap:1.5rem;align-items:stretch}
+.spec{background:var(--ink-deep);color:var(--fog);padding:1.75rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem}
+.spec-top{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:.6875rem;letter-spacing:.1em;color:#9AA4A8;border-bottom:1px solid rgba(237,241,242,.15);padding-bottom:.75rem}
+.spec-top .kit{color:var(--verm);font-weight:600}
+.spec-rows{display:flex;flex-direction:column;gap:.5rem;font-family:var(--mono);font-size:.75rem}
+.spec-rows .row{display:flex;justify-content:space-between;gap:1rem;background:rgba(237,241,242,.06);padding:.6rem .8rem}
+.spec-rows .row .k{color:#9AA4A8}
+.spec-rows .row .v{font-weight:600;text-align:right}
+.spec-rows .row .v.warn{color:var(--verm)}
+.spec-status{background:rgba(237,241,242,.08);border:1px solid rgba(237,241,242,.15);padding:.7rem .9rem;font-family:var(--mono);font-size:.75rem;color:#9AA4A8}
+.spec-status strong{color:var(--fog)}
+.frictions{background:var(--card);border:1px solid var(--line);padding:1.75rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem}
+.friction-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.friction-card{background:var(--fog);border:1px solid var(--line-soft);padding:1.1rem}
+.friction-card .p{font-family:var(--mono);font-size:.6875rem;font-weight:700;letter-spacing:.1em;color:var(--verm-dark);margin-bottom:.35rem}
+.friction-card h4{font-size:1.1rem;font-weight:600;margin-bottom:.4rem}
+.friction-card p{font-size:.85rem;color:var(--mut)}
+.gate-sum{background:var(--surface-2);border:1px solid var(--line);padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.gate-sum span{font-size:1.0625rem;font-weight:600}
+.gate-sum svg{width:28px;height:28px;flex:none;color:var(--sea)}
+
+/* ---- pricing ---- */
+.tiers{text-align:center;max-width:48rem;margin:0 auto 2.5rem}
+.tiers .kick{font-family:var(--mono);font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--verm-dark);font-weight:600}
+.tiers h2{font-size:2rem;font-weight:600;margin:.5rem 0}
+.tiers p{color:var(--mut)}
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;align-items:stretch}
+.tier{background:var(--card);border:1px solid var(--line);padding:1.75rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem;position:relative}
+.tier.reco{box-shadow:4px 4px 0 rgba(16,24,28,.14);border-color:var(--ink)}
+.tier .badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--verm-dark);color:#fff;font-family:var(--mono);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.3rem 1rem;white-space:nowrap}
+.tier .t-head{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6875rem;letter-spacing:.08em;color:var(--mut);text-transform:uppercase;padding-bottom:.75rem;border-bottom:1px solid var(--line-soft)}
+.tier.reco .t-head{color:var(--verm-dark);font-weight:600}
+.tier h3{font-size:1.375rem;font-weight:600;margin-top:1rem}
+.price{margin:.5rem 0 1.25rem}
+.price .amt{font-size:3rem;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.price .per{font-family:var(--mono);font-size:.75rem;color:var(--mut)}
+.tier ul{list-style:none;display:flex;flex-direction:column;gap:.8rem;font-size:.9375rem;text-align:left}
+.tier li{display:flex;gap:.6rem;align-items:flex-start}
+.tier li .tick{color:var(--verm-dark);font-weight:700;flex:none}
+.tier li.strong{font-weight:600}
+.tier .btn{width:100%;justify-content:center;margin-top:1.5rem}
+.btn-outline{background:var(--surface-2);border:1px solid var(--line);color:var(--ink)}
+.btn-outline:hover{background:#DFE3E4}
+
+/* ---- statement / kontakt ---- */
+.statement{max-width:56rem;margin:0 auto;background:var(--card);border:1px solid var(--line);padding:2.5rem;text-align:center}
+.statement .kick{font-family:var(--mono);font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.statement h3{font-size:2rem;font-weight:600;margin:1rem 0;line-height:1.3}
+.statement .tag{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;color:var(--verm-dark);font-weight:600}
+.kontakt-card{max-width:48rem;margin:0 auto;background:var(--card);border:1px solid var(--line);padding:3rem 2.5rem;text-align:center;box-shadow:4px 4px 0 rgba(16,24,28,.1)}
+.kontakt-card h2{font-size:2rem;font-weight:600;margin:.75rem 0}
+.kontakt-card p.lede{font-size:1.0625rem;color:var(--mut);max-width:34rem;margin:0 auto 1.5rem}
+.kontakt-meta{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;color:var(--mut);margin-top:1.25rem}
+
+/* ---- disclaimer + footer ---- */
+.disclaimer{border-top:1px solid var(--line);background:var(--surface-2)}
+.disclaimer .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;padding:1.1rem 2.5rem;font-family:var(--mono);font-size:.75rem;color:var(--mut)}
+.disclaimer .strong{color:var(--ink);font-weight:600}
+.site-footer{border-top:1px solid var(--line);background:var(--surface-2);padding:1.75rem 0;font-family:var(--mono);font-size:.75rem;color:var(--mut)}
+.site-footer .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.5rem}
+.site-footer .ref{color:var(--ink);font-weight:600}
+
+/* ---- reveal motion (instrument-precise) ---- */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.ring-arc{transition:stroke-dashoffset 1.4s cubic-bezier(.16,1,.3,1)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .ring-arc{transition:none}
+  .live .pulse{animation:none}
+}
+
+/* ---- responsive ---- */
+@media (max-width:1023px){
+  .hero-grid{grid-template-columns:1fr}
+  .blocks{grid-template-columns:1fr}
+  .gate-grid{grid-template-columns:1fr}
+  .tier-grid{grid-template-columns:1fr;max-width:30rem;margin:0 auto}
+  .tier.reco{order:-1}
+}
+@media (max-width:900px){
+  .main-nav{display:none}
+  .mobile-nav{display:flex}
+}
+@media (min-width:901px){.mobile-nav{display:none}}
+.mobile-nav{overflow-x:auto;border-top:1px solid var(--line);-webkit-overflow-scrolling:touch}
+.mobile-nav .row{display:flex;gap:.25rem;padding:.4rem 1rem;min-width:max-content}
+.mobile-nav a{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:.4rem .65rem;color:var(--mut);white-space:nowrap}
+.mobile-nav a.active{background:var(--ink-deep);color:var(--fog);font-weight:600}
+@media (max-width:767px){
+  .wrap{padding-left:1rem;padding-right:1rem}
+  .coord-strip .inner{padding:.55rem 1rem}
+  .disclaimer .inner{padding:1rem}
+  .hero{padding:3rem 0 2.5rem}
+  .hero h1{font-size:2rem}
+  .strips{grid-template-columns:1fr}
+  .panels{grid-template-columns:1fr}
+  .friction-grid{grid-template-columns:1fr}
+  .telemetry{grid-template-columns:1fr 1fr}
+  .sec{padding:3rem 0}
+  .coord-chip{display:none}
+  .kontakt-card{padding:2rem 1.25rem}
+  .statement{padding:1.75rem 1.25rem}
+  .statement h3{font-size:1.5rem}
+  .sec-head h2{font-size:1.5rem}
+  .price .amt{font-size:2.5rem}
+  .depthmark{font-size:5rem;top:.5rem;right:1rem}
+}
+</style>
+</head>
+<body>
+<!-- ================================================================
+  BRAND CONSTANT — exactly ONE place to swap the client.
+  Change these two values and every mention updates on load.
+================================================================= -->
+<script>
+const BRAND = { name: "Lazzaro One", domain: "huax.one" };
+</script>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <div class="brand"><span class="plus">+</span><span>TIYAN DIGITAL</span><span class="sub">/</span><span class="sub">AUDIT-DOSSIER</span></div>
+    <div style="display:flex;align-items:center;gap:1.5rem">
+      <span class="coord-chip"><span class="dot"></span>52.52&deg;N 13.40&deg;E &middot; BERLIN</span>
+      <nav class="main-nav" aria-label="Abschnitte">
+        <a href="#befund" data-path="befund">Befund</a>
+        <a href="#checks" data-path="checks">Checks</a>
+        <a href="#gate" data-path="gate">Gate</a>
+        <a href="#fix-plan" data-path="fix-plan">Fix-Plan</a>
+        <a href="#kontakt" data-path="kontakt">Kontakt</a>
+      </nav>
+      <div class="live"><span class="pulse"></span><span>LIVE-AUDIT &middot; 04.11.2026</span></div>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Abschnitte mobil">
+    <div class="row">
+      <a href="#befund" data-path="befund">Befund</a>
+      <a href="#checks" data-path="checks">Checks</a>
+      <a href="#gate" data-path="gate">Gate</a>
+      <a href="#fix-plan" data-path="fix-plan">Fix-Plan</a>
+      <a href="#kontakt" data-path="kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<div class="coord-strip">
+  <div class="inner wrap">
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center">
+      <span class="rec">&#9679; REC-LIVE</span>
+      <span>LAT: 52.5200&deg; N &middot; LON: 13.4050&deg; E</span>
+      <span>TARGET: <span data-brand="domain">huax.one</span> (<span data-brand="name">Lazzaro One</span>)</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center">
+      <span>SONDIERUNG: -42.8m</span>
+      <span class="status-pill">STATUS: AUDIT ABGESCHLOSSEN</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="depthmark" aria-hidden="true">-108m</div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-tag"><span class="plus">+</span><span>SEO/GEO-TEARDOWN &middot; <span data-brand="domain">huax.one</span> &middot; STAND 04.11.2026</span></div>
+      <h1>Ihre Website ist f&uuml;r Google gebaut.<br><span class="accent">Nicht f&uuml;r KI.</span></h1>
+      <p class="lede">Klassisches SEO: solide. Aber ChatGPT, Perplexity und AI Overviews sehen <span class="dom" data-brand="domain">huax.one</span> kaum &mdash; 16 Checks, live gepr&uuml;ft am 04.11.2026.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#befund"><span>Zum Befund</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg></a>
+        <a class="btn btn-ghost" href="#fix-plan"><span>Fix-Plan ansehen</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg></a>
+      </div>
+      <div class="telemetry">
+        <div class="cell"><span class="k">Mandant</span><span class="v" data-brand="name">Lazzaro One</span></div>
+        <div class="cell"><span class="k">Domain</span><span class="v" data-brand="domain">huax.one</span></div>
+        <div class="cell"><span class="k">Audit-Methodik</span><span class="v">16-Pkt. Hydro-Spec</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="gauge reveal" role="img" aria-label="3 von 16 Checks bestanden">
+        <span class="corner c-tl">+</span><span class="corner c-tr">+</span><span class="corner c-bl">+</span><span class="corner c-br">+</span>
+        <div class="gauge-head"><span>TELEMETRIE &middot; GEO-SCORE</span><span class="alert">18.75% KI-READINESS</span></div>
+        <div class="gauge-dial">
+          <svg width="224" height="224" viewBox="0 0 160 160" style="transform:rotate(-90deg)" aria-hidden="true">
+            <circle cx="80" cy="80" r="64" fill="none" stroke="#DEE3E4" stroke-width="10"/>
+            <circle class="ring-arc" id="ringArc" cx="80" cy="80" r="64" fill="none" stroke="#B71500" stroke-width="10" stroke-dasharray="402.12" stroke-dashoffset="402.12" stroke-linecap="butt"/>
+            <circle cx="80" cy="80" r="52" fill="none" stroke="#9AA4A8" stroke-width="1" stroke-dasharray="2 6"/>
+          </svg>
+          <div class="gauge-center">
+            <span class="gauge-score"><span id="scoreNum">0</span> / 16</span>
+            <span class="gauge-label">Checks bestanden</span>
+          </div>
+        </div>
+        <div class="gauge-foot">
+          <span class="g"><span class="swatch crit"></span>13 DEFIZITE</span>
+          <span class="g"><span class="swatch pass"></span>3 VALIDIERT</span>
+          <span class="ref">TY-BER-2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 01 // EXECUTIVE SUMMARY ================= -->
+<section class="sec alt" id="befund">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">01 // Executive Summary &middot; 52.52&deg;N 13.40&deg;E</div>
+        <h2>Der Befund in 30 Sekunden</h2>
+      </div>
+      <div class="sec-note"><span class="tick">&#10003;</span> Alle Befunde wurden am 04.11.2026 live auf <span data-brand="domain">huax.one</span> gepr&uuml;ft.</div>
+    </div>
+    <div class="strips">
+      <article class="strip reveal">
+        <div>
+          <div class="strip-top"><span class="strip-id first">BEFUND 01</span><span class="chip kritisch">[KRITISCH]</span></div>
+          <h3 style="margin-top:1rem">Keine llms.txt &amp; Schema-Infrastruktur</h3>
+          <p>Keine <code>llms.txt</code>, keine FAQ-Inhalte, keine strukturierten Daten &rarr; f&uuml;r KI-Suchen wie ChatGPT &amp; Perplexity fast unsichtbar.</p>
+        </div>
+        <div class="impact">AUSWIRKUNG: Halluzinationsrisiko bei Anfragen zu Maritime-Data</div>
+      </article>
+      <article class="strip reveal">
+        <div>
+          <div class="strip-top"><span class="strip-id">BEFUND 02</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+          <h3 style="margin-top:1rem">Pre-Seed Meldung nicht indexiert</h3>
+          <p>Die Pre-Seed-Meldung von heute (B#, tech.eu) steht nicht auf der Website &rarr; verschenkte Aktualit&auml;t und verlorene Autorit&auml;ts-Signale.</p>
+        </div>
+        <div class="impact">AUSWIRKUNG: KI-Modelle bewerten das Startup als vor&uuml;bergehend inaktiv</div>
+      </article>
+      <article class="strip reveal">
+        <div>
+          <div class="strip-top"><span class="strip-id">BEFUND 03</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+          <h3 style="margin-top:1rem">Keine Lokalisierung f&uuml;r DACH</h3>
+          <p>Keine deutschen Inhalte (<code>lang="en"</code>, kein hreflang) &rarr; Berliner Startup, in deutscher KI-Suche und B2B-Prompts abwesend.</p>
+        </div>
+        <div class="impact">AUSWIRKUNG: 0% DACH-Sichtbarkeit f&uuml;r Logistik- und Reederei-Audits</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTRUMENT PANELS ================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="panels">
+      <div class="panel reveal">
+        <div class="panel-fig" aria-hidden="true">
+          <svg viewBox="0 0 104 104" fill="none">
+            <circle cx="52" cy="52" r="46" stroke="#9AA4A8" stroke-width="1"/>
+            <circle cx="52" cy="52" r="34" stroke="#9AA4A8" stroke-width="1" stroke-dasharray="3 4"/>
+            <circle cx="52" cy="52" r="22" stroke="#9AA4A8" stroke-width="1"/>
+            <path d="M52 52 L86 26" stroke="#FF3B1F" stroke-width="2"/>
+            <circle cx="86" cy="26" r="3" fill="#FF3B1F"/>
+            <path d="M52 6v10M52 88v10M6 52h10M88 52h10" stroke="#EDF1F2" stroke-width="1.5"/>
+            <circle cx="52" cy="52" r="3" fill="#EDF1F2"/>
+            <text x="52" y="99" text-anchor="middle" fill="#9AA4A8" font-family="IBM Plex Mono,monospace" font-size="8">-42.8m</text>
+          </svg>
+        </div>
+        <div>
+          <span class="k red">GEO-TELEMETRIE MODELL</span>
+          <h4>Warum klassisches SEO f&uuml;r HUAX versagt</h4>
+          <p>LLMs aggregieren nicht &uuml;ber Backlinks, sondern &uuml;ber semantische Zitationsvektoren in Entity-Graphen.</p>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <div class="panel-fig" aria-hidden="true">
+          <svg viewBox="0 0 104 104" fill="none">
+            <path d="M6 84 L24 66 L40 72 L56 44 L72 50 L88 22 L98 30" stroke="#FF3B1F" stroke-width="2"/>
+            <circle cx="88" cy="22" r="3.5" fill="#FF3B1F"/>
+            <g stroke="#9AA4A8" stroke-width="1" opacity=".6">
+              <path d="M6 92h92M6 20h92M6 56h92"/>
+            </g>
+            <text x="8" y="16" fill="#9AA4A8" font-family="IBM Plex Mono,monospace" font-size="8">SIG&#9650;</text>
+            <text x="62" y="99" fill="#9AA4A8" font-family="IBM Plex Mono,monospace" font-size="8">ZITAT-VEKTOR</text>
+          </svg>
+        </div>
+        <div>
+          <span class="k" data-brand="name">Lazzaro One</span> <span class="k" style="color:var(--faint)">&middot; BERLIN</span>
+          <h4>Hohe technologische Relevanz</h4>
+          <p>Das Produkt ist Weltklasse &mdash; die KI-Maschinenlesbarkeit des Webauftritts hinkt dem Benchmark hinterher.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 // AUDIT REGISTER ================= -->
+<section class="sec" id="checks" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">02 // Audit Register &middot; vollst&auml;ndiger Telemetrie-Katalog</div>
+        <h2>Die 16 Checks im Detail</h2>
+      </div>
+      <div class="tally">
+        <span class="t-pass">3 BESTANDEN</span>
+        <span class="t-bedarf">10 HANDLUNGSBEDARF</span>
+        <span class="t-krit">3 KRITISCH</span>
+      </div>
+    </div>
+    <div class="blocks">
+      <!-- BLOCK A -->
+      <div class="block reveal">
+        <div class="block-head"><span class="t">Block A: KI-Suche / GEO</span><span class="s kritisch">2 KRITISCH &middot; 2 BEDARF</span></div>
+        <div class="checks">
+          <article class="check">
+            <div class="check-row"><span class="n">01 &middot; llms.txt fehlt (404)</span><span class="chip kritisch">[KRITISCH]</span></div>
+            <p><strong>Befund:</strong> Keine semantische Manifest-Datei f&uuml;r Crawler unter <span data-brand="domain">huax.one</span>/llms.txt auffindbar.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> LLMs crawlen blind ohne kuratierte Context-Grenzen. Die KI synthetisiert unvollst&auml;ndige Fragmente statt validierter Kernbotschaften.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">02 &middot; Null FAQ-Inhalte siteweit</span><span class="chip kritisch">[KRITISCH]</span></div>
+            <p><strong>Befund:</strong> Keine Frage-Antwort-Bl&ouml;cke oder strukturierte Aufschl&uuml;sselungen im gesamten Quelltext.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Perplexity und Google AI Overviews extrahieren prim&auml;r direkte Q&amp;A-Cluster. Ohne FAQ fehlt das prim&auml;re Zitationsfutter.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">03 &middot; Kein Deutsch / kein hreflang</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Reines <code>lang="en"</code> ohne deutsches &Auml;quivalent oder hreflang-Tags.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Das Berliner Startup wird bei deutschsprachigen Enterprise-Prompts (&bdquo;Welche deutschen KI-Startups tracken Schifffahrt?&ldquo;) komplett ausgeblendet.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">04 &middot; Pre-Seed-News fehlt (Sitemap 30.09)</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Frische Finanzierungsrunde von heute fehlt im sitemap.xml-Index (letzter Stand: 30.09.2026).</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Fehlende Aktualit&auml;t signalisiert KI-Agenten Inaktivit&auml;t. Presseverlinkungen von Tech.eu laufen ins Leere.</p>
+          </article>
+        </div>
+      </div>
+      <!-- BLOCK B -->
+      <div class="block reveal">
+        <div class="block-head"><span class="t">Block B: Strukturierte Daten</span><span class="s kritisch">1 KRITISCH &middot; 3 BEDARF</span></div>
+        <div class="checks">
+          <article class="check">
+            <div class="check-row"><span class="n">05 &middot; Kein Organization-Schema</span><span class="chip kritisch">[KRITISCH]</span></div>
+            <p><strong>Befund:</strong> Nur generisches WebSite-Schema. Keine <code>schema.org/Organization</code> Entit&auml;t hinterlegt.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Der Google Knowledge Graph kann <span data-brand="name">Lazzaro One</span> nicht eindeutig als juristische Maritime-Intelligence-Entit&auml;t im Vektorraum verankern.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">06 &middot; Kein Person-Schema f&uuml;r Gr&uuml;nder</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Arsenio Longo &amp; Maria Grazia Del Prete sind ohne semantische Person-Entities aufgef&uuml;hrt.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Fehlendes E-E-A-T und Founder-Authority-Signal in generativen KI-Synthesen und Investoren-Suchen.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">07 &middot; Kein Article-Schema (7 Journal-Texte)</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> 7 bestehende Journal-Artikel sind lediglich als unstrukturierte HTML-Divs markiert.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Tiefgehende maritime Fachanalysen werden in KI-Suchen nicht als zitierf&auml;hige Publikationen klassifiziert.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">08 &middot; Pressezitate (WSJ) nur reines HTML</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Hochwertige Medienzitate (u.&nbsp;a. Wall Street Journal) nicht semantisch ausgezeichnet.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Externe Zitate als Validierungs-Proof verpuffen f&uuml;r Auswertungs-Bots ohne <code>citation</code>-Tag.</p>
+          </article>
+        </div>
+      </div>
+      <!-- BLOCK C -->
+      <div class="block reveal">
+        <div class="block-head"><span class="t">Block C: SEO-Basics</span><span class="s pass">2 BESTANDEN &middot; 3 BEDARF</span></div>
+        <div class="checks">
+          <article class="check">
+            <div class="check-row"><span class="n">09 &middot; Title-Tag generisch</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Reiner Brand-Titel ohne maritime Category-Keywords.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Verliert Klickrate in klassischen SERPs und liefert schwaches Prim&auml;r-Keyword-Mapping.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">10 &middot; Meta Description ohne CTA</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Rein deskriptiver Flie&szlig;text ohne klare Aufforderung zur Interaktion.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Niedrige CTR schw&auml;cht Ranking-Signale bei umk&auml;mpften Suchbegriffen.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">11 &middot; Social-Sharing nur kleine Logo-Card</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Twitter:card ist auf <code>summary</code> statt <code>summary_large_image</code> konfiguriert.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Schwache visuelle Pr&auml;senz bei Kuration auf LinkedIn und X &mdash; verschenkte virale Reichweite.</p>
+          </article>
+          <article class="check ok">
+            <div class="check-row"><span class="n">12 &middot; robots.txt + Sitemap valide (17 URLs)</span><span class="chip pass">[BESTANDEN]</span></div>
+            <p><strong>Befund:</strong> Sitemap erreichbar und 17 URLs sauber deklariert.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Sauberes Crawling-Fundament f&uuml;r klassische Suchmaschinen-Bots ist intakt.</p>
+          </article>
+          <article class="check ok">
+            <div class="check-row"><span class="n">13 &middot; Saubere H1-Struktur</span><span class="chip pass">[BESTANDEN]</span></div>
+            <p><strong>Befund:</strong> Eindeutige, logisch geschachtelte &Uuml;berschriften-Hierarchie.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Zug&auml;nglichkeit und prim&auml;res HTML-Dokument-Parsing funktionieren einwandfrei.</p>
+          </article>
+        </div>
+      </div>
+      <!-- BLOCK D -->
+      <div class="block reveal">
+        <div class="block-head"><span class="t">Block D: Technik &amp; Conversion</span><span class="s pass">1 BESTANDEN &middot; 2 BEDARF</span></div>
+        <div class="checks">
+          <article class="check ok">
+            <div class="check-row"><span class="n">14 &middot; Performance stark (33 KB, Lazy-Loading)</span><span class="chip pass">[BESTANDEN]</span></div>
+            <p><strong>Befund:</strong> Extrem schlanker Footprint, ca. 33 KB initialer Payload, natives Lazy-Loading.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Exzellente Core Web Vitals und vorbildliche Mobil-Indexierung.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">15 &middot; Cache-Header schwach (max-age=0)</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Statische Assets liefern teilweise <code>max-age=0</code> bzw. No-Cache Header aus.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Unn&ouml;tige Latenzen und Serverlast bei regelm&auml;&szlig;igen Re-Crawls durch Aggregatoren.</p>
+          </article>
+          <article class="check">
+            <div class="check-row"><span class="n">16 &middot; Briefing-Gate mit hoher Reibung</span><span class="chip bedarf">[HANDLUNGSBEDARF]</span></div>
+            <p><strong>Befund:</strong> Reines E-Mail-Inputfeld mit externer Weiterleitung und unklarer F&uuml;hrung.</p>
+            <p class="why"><strong>Warum das z&auml;hlt:</strong> Konvertiert hochqualifizierten Schifffahrts- und Logistik-Traffic unterdurchschnittlich.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 // GATE ================= -->
+<section class="sec alt" id="gate">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">03 // Conversion-Analyse &middot; die Funnel-Schleuse</div>
+        <h2>Request a briefing: das Tor klemmt</h2>
+      </div>
+      <div class="friction">FRICTION FACTOR: HOCH</div>
+    </div>
+    <div class="gate-grid">
+      <div class="spec reveal">
+        <div>
+          <div class="spec-top"><span>IST-SPEZIFIKATION DER SCHLEUSE</span><span class="kit">KIT.COM INTEGRATION</span></div>
+          <div class="spec-rows" style="margin-top:1rem">
+            <div class="row"><span class="k">FORMULAR-ENGINE:</span><span class="v">Kit.com (ConvertKit)</span></div>
+            <div class="row"><span class="k">EINGABEFELD:</span><span class="v">Nur E-Mail (kein Name/Rolle)</span></div>
+            <div class="row"><span class="k">AUSWAHL-OPTION:</span><span class="v">Engagement-Dropdown</span></div>
+            <div class="row"><span class="k">VALIDIERUNG:</span><span class="v warn">Pflicht-Consent-Checkbox</span></div>
+            <div class="row"><span class="k">DATEN-ROUTE:</span><span class="v">POST an externe Drittdomain</span></div>
+            <div class="row"><span class="k">NOTFALL-WEG:</span><span class="v">Stumpfer mailto-Link</span></div>
+          </div>
+        </div>
+        <div class="spec-status"><strong>STATUS:</strong> Mechanischer Bruch im Lead-Flow</div>
+      </div>
+      <div class="frictions reveal">
+        <div class="friction-grid">
+          <div class="friction-card"><div class="p">PUNKT 01</div><h4>Kein Namensfeld</h4><p>Keine personalisierte Nachverfolgung m&ouml;glich. Hochkar&auml;tige Maritime-Leads bleiben anonyme Postf&auml;cher ohne Kontext.</p></div>
+          <div class="friction-card"><div class="p">PUNKT 02</div><h4>Pflicht-Checkbox</h4><p>K&uuml;nstliche Barriere beim Absenden. Erzeugt unn&ouml;tige Conversion-Abbr&uuml;che auf mobilen Endger&auml;ten.</p></div>
+          <div class="friction-card"><div class="p">PUNKT 03</div><h4>Drittanbieter-Domain</h4><p>POST-Weiterleitung auf externe Server schw&auml;cht das Enterprise-Vertrauen institutioneller Schifffahrts-Kunden.</p></div>
+          <div class="friction-card"><div class="p">PUNKT 04</div><h4>Keine Erwartungsf&uuml;hrung</h4><p>Dem Nutzer ist unklar, wann und wie das Briefing zugestellt wird (PDF per Mail? Call-Einladung? Dashboard-Zugang?).</p></div>
+        </div>
+        <div class="gate-sum">
+          <span>Kein Redesign n&ouml;tig &mdash; das Tor muss nur leichter aufgehen.</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 // FIX-PLAN ================= -->
+<section class="sec" id="fix-plan">
+  <div class="wrap">
+    <div class="tiers">
+      <span class="kick">04 // Strategie &amp; Umsetzung</span>
+      <h2>KONZEPT-ANGEBOT &mdash; AUF <span data-brand="domain">HUAX.ONE</span> ZUGESCHNITTEN</h2>
+      <p>Drei planbare Sanierungsstufen zur vollen Etablierung im semantischen KI-Vektorraum.</p>
+    </div>
+    <div class="tier-grid">
+      <div class="tier reveal">
+        <div>
+          <div class="t-head"><span>TIER 01</span><span>SOFORT-FUNDAMENT</span></div>
+          <h3>Basic</h3>
+          <div class="price"><span class="amt">&euro;500</span> <span class="per">einmalig</span></div>
+          <ul>
+            <li><span class="tick">&#10003;</span><span><strong>llms.txt + llms-full.txt</strong> eingerichtet</span></li>
+            <li><span class="tick">&#10003;</span><span>Organization-, Person- &amp; Article-Schema</span></li>
+            <li><span class="tick">&#10003;</span><span>Title-, Meta- &amp; OpenGraph-Korrekturen</span></li>
+            <li><span class="tick">&#10003;</span><span>Cache-Header Konfiguration</span></li>
+          </ul>
+        </div>
+        <a class="btn btn-outline" href="#kontakt">Basic w&auml;hlen</a>
+      </div>
+      <div class="tier reco reveal">
+        <div class="badge">Empfohlene Sanierung</div>
+        <div>
+          <div class="t-head"><span>TIER 02</span><span>VOLLST&Auml;NDIGER KI-SCHUTZ</span></div>
+          <h3>Standard</h3>
+          <div class="price"><span class="amt">&euro;950</span> <span class="per">einmalig</span></div>
+          <ul>
+            <li class="strong"><span class="tick">&#10003;</span><span>Alles aus Paket Basic enthalten</span></li>
+            <li><span class="tick">&#10003;</span><span><strong>FAQ-Content-Layer</strong> (zitierf&auml;hige Q&amp;A Bl&ouml;cke)</span></li>
+            <li><span class="tick">&#10003;</span><span><strong>Deutsche GEO-Ebene</strong> (hreflang + DE-Fassungen)</span></li>
+            <li><span class="tick">&#10003;</span><span>Funding-Newsroom (Presse &amp; Schema-Sync)</span></li>
+            <li><span class="tick">&#10003;</span><span>Reibungsfreie Gate-Optimierung</span></li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#kontakt">Standard w&auml;hlen</a>
+      </div>
+      <div class="tier reveal">
+        <div>
+          <div class="t-head"><span>TIER 03</span><span>KONTINUIERLICHE AUTORIT&Auml;T</span></div>
+          <h3>Premium</h3>
+          <div class="price"><span class="amt">&euro;1.500</span> <span class="per">Setup + Betreuung</span></div>
+          <ul>
+            <li class="strong"><span class="tick">&#10003;</span><span>Alles aus Paket Standard enthalten</span></li>
+            <li><span class="tick">&#10003;</span><span><strong>HUAX-Weekly-Pipeline</strong> (jeder Brief strukturiert)</span></li>
+            <li><span class="tick">&#10003;</span><span>Monatliches GEO-Monitoring (ChatGPT/Perplexity)</span></li>
+            <li><span class="tick">&#10003;</span><span>Laufende Freshness- &amp; Zitations-Betreuung</span></li>
+          </ul>
+        </div>
+        <a class="btn btn-outline" href="#kontakt">Premium w&auml;hlen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WARUM TIYAN ================= -->
+<section class="sec alt" style="padding:3.5rem 0">
+  <div class="wrap">
+    <div class="statement reveal">
+      <span class="kick">BERLIN &middot; TIYAN DIGITAL</span>
+      <h3>&bdquo;Websites, KI-Automatisierung und SEO/GEO aus einer Hand. Diese Seite ist die Arbeitsprobe.&ldquo;</h3>
+      <div class="tag">PR&Auml;ZISION OHNE AGENTUR-OVERHEAD &middot; CODE-NATIV &amp; VERIFIZIERBAR</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 // KONTAKT ================= -->
+<section class="sec" id="kontakt">
+  <div class="wrap">
+    <div class="kontakt-card reveal">
+      <div class="eyebrow" style="color:var(--verm-dark);font-weight:600">05 // Kontakt &amp; direkter Austausch</div>
+      <h2>15 Minuten gen&uuml;gen.</h2>
+      <p class="lede">Antworten Sie einfach auf unsere E-Mail &mdash; oder schreiben Sie direkt f&uuml;r eine unverbindliche Detailbesprechung der Umsetzung.</p>
+      <a class="btn btn-primary" style="padding:1.1rem 2.2rem" href="mailto:contact@tiyandegital.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="0"/><path d="M3 7l9 6 9-6"/></svg><span>E-Mail schreiben</span></a>
+      <div class="kontakt-meta">REAKTIONSZEIT: &lt; 4 STUNDEN &middot; DIREKT ZUM ENTWICKLER</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DISCLAIMER ================= -->
+<div class="disclaimer">
+  <div class="inner wrap">
+    <span>Konzept-Demo von Tiyan Digital &mdash; unverbindlicher Audit-Vorschlag f&uuml;r <span class="strong" data-brand="name">Lazzaro One</span></span>
+    <span>Alle Befunde live gepr&uuml;ft am 04.11.2026</span>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner wrap">
+    <div><span class="ref">[HYDRO-SPEC 802.11-B]</span>&nbsp;&nbsp;BATHYMETRIC GEO-TELEMETRY REGISTER</div>
+    <div><span>DATUM: WGS-84</span>&nbsp;&nbsp;<span>QUELLE: <span data-brand="domain">HUAX.ONE</span> &middot; LIVE-PR&Uuml;FUNG</span>&nbsp;&nbsp;<span class="ref">REF: TY-BER-2026</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* ---------- 1. Brand constant: the ONE swappable source ---------- */
+  var nameEls = document.querySelectorAll('[data-brand="name"]');
+  var domEls  = document.querySelectorAll('[data-brand="domain"]');
+  nameEls.forEach(function(el){ el.textContent = BRAND.name; });
+  domEls.forEach(function(el){ el.textContent = BRAND.domain; });
+
+  /* ---------- 2. Gauge draw + count-up on first reveal ---------- */
+  var RING_C = 402.12, PASSED = 3, TOTAL = 16;
+  var arc = document.getElementById('ringArc');
+  var num = document.getElementById('scoreNum');
+  var gauge = arc ? arc.closest('.gauge') : null;
+  var gaugeDone = false;
+  function runGauge(){
+    if (gaugeDone || !arc) return;
+    gaugeDone = true;
+    var target = RING_C * (1 - PASSED / TOTAL);   // 326.72
+    requestAnimationFrame(function(){
+      arc.style.strokeDashoffset = String(target);
+    });
+    var start = null, dur = 1200;
+    function step(ts){
+      if (!start) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var e = 1 - Math.pow(1 - p, 3);             // expo-out, matches reveal easing
+      num.textContent = String(Math.round(PASSED * e));
+      if (p < 1) requestAnimationFrame(step);
+      else num.textContent = String(PASSED);
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- 3. Staggered reveal (instrument-precise) ---------- */
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          var el = en.target;
+          el.style.transitionDelay = Math.min(300, (el.dataset.stagger || 0)) + 'ms';
+          el.classList.add('in');
+          if (el === gauge) runGauge();
+          io.unobserve(el);
+        }
+      });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    var idx = 0;
+    items.forEach(function(el){ el.dataset.stagger = (idx++ % 3) * 70; io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+    runGauge();
+  }
+
+  /* ---------- 4. Active nav state ---------- */
+  var links = document.querySelectorAll('[data-path]');
+  var secs = ['befund','checks','gate','fix-plan','kontakt'].map(function(id){ return document.getElementById(id); });
+  function setActive(id){
+    links.forEach(function(a){
+      var on = a.getAttribute('data-path') === id;
+      a.classList.toggle('active', on);
+      if (on) a.setAttribute('aria-current','page');
+      else a.removeAttribute('aria-current');
+    });
+  }
+  var spy;
+  if ('IntersectionObserver' in window){
+    spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) setActive(en.target.id);
+      });
+    }, {rootMargin: '-40% 0px -55% 0px'});
+    secs.forEach(function(s){ if (s) spy.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
